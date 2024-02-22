@@ -10,12 +10,12 @@ const feedbacks = [
     link: "",
     text: "Minha experiência com o convite personalizado foi maravilhosa, tendo em vista que a maioria dos meus convidados eram de cidades diferentes da minha. Esse tipo de convite facilitou a distribuição e me ofereceu bastante praticidade para a organização do casamento. Além disso, todo o desing foi exatamente como sempre sonhei e Laís,  sempre muito atenciosa, deixou todos os detalhes  perfeitos. Amei demais e super recomendo a experiência."
   },
-  {
-    name: "Laiane Rodrigues",
-    info: "Cliente",
-    link: "",
-    text: "Laís, eu amei o convite! Atendeu as minhas expectativas, ficou bem funcional, prático e muito lindo 😍. Atendimento excelente, obrigada pela paciência <3"
-  },
+  // {
+  //   name: "Laiane Rodrigues",
+  //   info: "Cliente",
+  //   link: "",
+  //   text: "Laís, eu amei o convite! Atendeu as minhas expectativas, ficou bem funcional, prático e muito lindo 😍. Atendimento excelente, obrigada pela paciência <3"
+  // },
   {
     name: "Bruna França",
     info: "Cliente",
