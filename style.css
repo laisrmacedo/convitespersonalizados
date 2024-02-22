@@ -20,7 +20,7 @@ body{
 @media screen and (max-width: 600px) {
   body{
     display: block;
-    padding: 40px 20px;
+    padding: 20px;
   }
 }
 
@@ -127,9 +127,9 @@ main > section > div{
 }
 
 #feedbacks{
-  /* border: 1px solid red; */
   width: 50%;
   display: flex;
+  min-height: 200px;
 }
 
 .feedback{
@@ -147,6 +147,11 @@ main > section > div{
   
 }
 
+.feedback h3{
+  font-size: min(14px, 3vw);
+  text-transform: uppercase;
+}
+
 .feedback h4{
   font-weight: lighter;
   font-size: 10px;
@@ -156,6 +161,7 @@ main > section > div{
 .feedback a{
   text-decoration: none;
   cursor: pointer;
+  color: #000000;
 }
 
 .feedback a :hover{
@@ -165,16 +171,25 @@ main > section > div{
 .feedback > p{
   font-variant: normal;
   text-align: justify;
+  font-size: min(14px, 3vw);
 }
 
 @media screen and (max-width: 600px) {
+  .media{
+    flex-direction: column-reverse;
+    /* border: 1px red solid; */
+  }
   #feedbacks{
     width: 100%;
-    min-height: 200px;
     flex-direction: column;
+    /* justify-content: ; */
   }
   .feedback{
     width: 100%;
+  }
+  .feedback > p{
+    /* border: 1px solid red; */
+    min-height: 100px;
   }
 }
 
@@ -236,11 +251,11 @@ main > section > div{
 
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .video{
     width: 100%;
   }
-} */
+}
 
 video{
   /* -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); 
