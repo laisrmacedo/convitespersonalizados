@@ -122,13 +122,18 @@ main > section > div{
 }
 
 .media{
-  /* border: 1px solid red; */
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.feedbacks{
+#feedbacks{
+  /* border: 1px solid red; */
   width: 50%;
+  display: flex;
+}
+
+.feedback{
+  width: 90%;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
@@ -142,31 +147,83 @@ main > section > div{
   
 }
 
-.feedbacks h4{
+.feedback h4{
   font-weight: lighter;
   font-size: 10px;
   text-transform: uppercase;
 }
 
-.feedbacks a{
+.feedback a{
   text-decoration: none;
   cursor: pointer;
 }
 
-.feedbacks a :hover{
+.feedback a :hover{
   color: rgb(106, 134, 78);
 }
 
-.feedbacks > p{
+.feedback > p{
   font-variant: normal;
   text-align: justify;
 }
 
-/* @media screen and (max-width: 600px) {
-  .media{
-    flex-direction: row-reverse;
+@media screen and (max-width: 600px) {
+  #feedbacks{
+    width: 100%;
+    min-height: 200px;
+    flex-direction: column;
   }
-} */
+  .feedback{
+    width: 100%;
+  }
+}
+
+
+.points-area{
+  height: 100%;
+  width: 5%;
+  min-width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.points-area > div{
+  /* border: 1px blue solid; */
+  width: 100%;
+  /* width: 26px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .points-area{
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+  }
+  .points-area > div{
+    width: 12px;
+  }
+}
+
+.points-area span{
+  border-radius: 50%;
+}
+
+.currentPoint{
+  background-color: rgb(106, 134, 78);
+  height: 8px;
+  min-width: 8px;
+}
+.othersPoints{
+  border: 1px solid #999999;
+  height: 6px;
+  min-width: 6px;
+}
 
 .video{
   width: 50%;
@@ -239,5 +296,4 @@ footer{
   bottom: -40px;
   filter:invert(1);
   opacity: .8;
-  /* border: 1px red solid; */
 }
