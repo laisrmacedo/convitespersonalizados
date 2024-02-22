@@ -242,13 +242,12 @@ main > section > div{
 
 .video{
   width: 50%;
-  /* max-width: 200px; */
+  /* max-height: 200px; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
   flex-basis: 200px;
-
 }
 
 @media screen and (max-width: 600px) {
